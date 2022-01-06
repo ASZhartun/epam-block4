@@ -1,10 +1,10 @@
 package aggregationAndComposition.task02;
 
 public class Engine {
-    int year;
-    String model;
-    boolean isWorking = false;
-    boolean isBroken = false;
+    private int year;
+    private String model;
+    private boolean isWorking = false;
+    private boolean isBroken = false;
 
     public Engine(int year, String model) {
         this.year = year;

@@ -1,10 +1,10 @@
 package aggregationAndComposition.task02;
 
 public class Car {
-    String mark;
-    Wheel[] base;
-    Engine carEngine;
-    boolean isMoving;
+    private String mark;
+    private Wheel[] base;
+    private Engine carEngine;
+    private boolean isMoving;
 
     {
         base = new Wheel[]{null, null, null, null};
@@ -84,7 +84,7 @@ public class Car {
             for (int i = 0; i < base.length; i++) {
                 if (base[i].isBroken()) return false;
             }
-            if (carEngine.isBroken) return false;
+            if (carEngine.isBroken()) return false;
         } catch (NullPointerException e) {
             return false;
         }
